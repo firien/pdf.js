@@ -354,6 +354,7 @@ function _fetchDocument(worker, source, pdfDataRangeTransport, docId) {
     },
     maxImageSize: getDefaultSetting('maxImageSize'),
     disableFontFace: getDefaultSetting('disableFontFace'),
+    disableAnnotations: getDefaultSetting('disableAnnotations'),
     disableCreateObjectURL: getDefaultSetting('disableCreateObjectURL'),
     postMessageTransfers: getDefaultSetting('postMessageTransfers') &&
                           !isPostMessageTransfersDisabled,

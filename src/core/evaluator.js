@@ -52,6 +52,7 @@ var PartialEvaluator = (function PartialEvaluatorClosure() {
     forceDataSchema: false,
     maxImageSize: -1,
     disableFontFace: false,
+    disableAnnotations: false,
     nativeImageDecoderSupport: NativeImageDecoding.DECODE,
     ignoreErrors: false,
     isEvalSupported: true,

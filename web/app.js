@@ -234,6 +234,12 @@ let PDFViewerApplication = {
       preferences.get('disableAutoFetch').then(function resolved(value) {
         PDFJS.disableAutoFetch = value;
       }),
+      preferences.get('disableAnnotations').then(function resolved(value) {
+        if (PDFJS.disableAnnotations === true) {
+          return;
+        }
+        PDFJS.disableAnnotations = value;
+      }),
       preferences.get('disableFontFace').then(function resolved(value) {
         if (PDFJS.disableFontFace === true) {
           return;

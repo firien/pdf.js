@@ -319,14 +319,16 @@ var Page = (function PageClosure() {
 
     get annotations() {
       var annotations = [];
-      var annotationRefs = this.getInheritedPageProp('Annots') || [];
-      for (var i = 0, n = annotationRefs.length; i < n; ++i) {
-        var annotationRef = annotationRefs[i];
-        var annotation = AnnotationFactory.create(this.xref, annotationRef,
-                                                  this.pdfManager,
-                                                  this.idFactory);
-        if (annotation) {
-          annotations.push(annotation);
+      if (this.evaluatorOptions.disableAnnotations === false) {
+        var annotationRefs = this.getInheritedPageProp('Annots') || [];
+        for (var i = 0, n = annotationRefs.length; i < n; ++i) {
+          var annotationRef = annotationRefs[i];
+          var annotation = AnnotationFactory.create(this.xref, annotationRef,
+                                                    this.pdfManager,
+                                                    this.idFactory);
+          if (annotation) {
+            annotations.push(annotation);
+          }
         }
       }
       return shadow(this, 'annotations', annotations);

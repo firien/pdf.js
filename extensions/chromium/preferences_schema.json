@@ -65,6 +65,12 @@
       "type": "boolean",
       "default": false
     },
+    "disableAnnotations": {
+      "title": "Disable annotations",
+      "description": "Whether to disable annotation rendering",
+      "type": "boolean",
+      "default": false
+    },
     "disableAutoFetch": {
       "type": "boolean",
       "default": false

@@ -8,6 +8,7 @@
   "pdfBugEnabled": false,
   "disableRange": false,
   "disableStream": false,
+  "disableAnnotations": false,
   "disableAutoFetch": false,
   "disableFontFace": false,
   "disableTextLayer": false,

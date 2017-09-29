@@ -401,6 +401,8 @@ function getDefaultSetting(id) {
       return globalSettings ? globalSettings.disableRange : false;
     case 'disableFontFace':
       return globalSettings ? globalSettings.disableFontFace : false;
+    case 'disableAnnotations':
+      return globalSettings ? globalSettings.disableAnnotations : false;
     case 'disableCreateObjectURL':
       return globalSettings ? globalSettings.disableCreateObjectURL : false;
     case 'disableWebGL':

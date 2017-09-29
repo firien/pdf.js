@@ -124,6 +124,14 @@ PDFJS.disableFontFace = (PDFJS.disableFontFace === undefined ?
                          false : PDFJS.disableFontFace);
 
 /**
+ * By default annotations are displayed.
+ * If disabled, the annotations will not be rendered.
+ * @var {boolean}
+ */
+PDFJS.disableAnnotations = (PDFJS.disableAnnotations === undefined ?
+                         false : PDFJS.disableAnnotations);
+
+/**
  * Path for image resources, mainly for annotation icons. Include trailing
  * slash.
  * @var {string}
